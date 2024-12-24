@@ -1,0 +1,233 @@
+/* @import "animate.css"; */
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* or your desired max-width */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header,
+.main-footer {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+
+
+
+
+.controls {
+  display: flex;
+  border: 1px solid #ccc;
+  border-top: 0;
+  padding: 10px;
+}
+
+.controls-right {
+  margin-left: auto;
+}
+
+.state {
+  margin: 10px 0;
+  font-family: monospace;
+}
+
+.state-title {
+  color: #999;
+  text-transform: uppercase;
+}
+
+
+
+
+
+/*Css for styling the resume pdf*/
+
+.resume-preview {
+  width: calc(210mm - 20mm); /* Adjust for 10mm margins on each side */
+  min-height: 297mm; /* A4 page height */
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Center the content */
+
+}
+
+.resume-preview ul,
+.resume-preview ol {
+  padding-left: 20px; /* Indentation for bullets or numbers */
+  margin: 0; /* Remove default margin */
+}
+
+.resume-preview li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Fix the spacing between the bullet and the content in unordered lists */
+.resume-preview ul {
+  list-style-type: disc; /* Default bullet points */
+  padding-left: 20px; /* Add left padding for space between bullet and text */
+}
+
+/* Fix issue with the numbering in ordered lists */
+.resume-preview ol {
+  list-style-type: decimal; /* Default numbering */
+  padding-left: 20px; /* Add left padding for space between number and text */
+  margin: 0; /* Remove default margin */
+}
+
+
+/* Ensure underlines are applied */
+.resume-preview u {
+  text-decoration: underline !important;
+}
+
+/* Styling for bold and italic text */
+.resume-preview b {
+  font-weight: bold;
+}
+
+.resume-preview i {
+  font-style: italic;
+}
+
+
+.resume-preview {
+  page-break-inside: avoid;
+  page-break-before: auto;
+  page-break-after: auto;
+}
+
+
+h1, h2, h3, p, ul, li {
+  page-break-inside: avoid;
+  margin: 0;
+}
+
+/* Ensure sections stay together */
+.section {
+  page-break-inside: avoid; /* Prevent splitting the content */
+  margin-bottom: 10px; /* Space between sections */
+}
+
+
+
+
+.resume-form-container {
+  margin-top: 80px; /* Adjust this value to match your navbar height */
+}
+
+body {
+  padding-top: 100px; /* Ensure no overlap */
+}
+
+
+
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
